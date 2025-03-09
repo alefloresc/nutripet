@@ -1,0 +1,129 @@
+body {
+  font-family: "Gabarito", sans-serif;
+  background-color: #ebf8ff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-family: "Gabarito", sans-serif;
+  font-size: 44px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nutri-color {
+  color: #4fba6f;
+}
+
+.pet-color {
+  color: #f29c1f;
+}
+
+.character {
+  width: 192px;
+  height: 192px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 16px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.character-image {
+  width: 100%;
+  height: auto;
+}
+
+.dialogue {
+  background-color: #ffa600;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+  margin: 16px;
+}
+
+.meal-form {
+  background-color: white;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.pyramid-image {
+  width: 70%;
+  margin: 20px auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.food-group-image {
+  width: 62px;
+  height: 62px;
+  margin-right: 5px;
+}
+
+.food-group-image.active {
+  animation: pulse 0.5s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.servings-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.servings-btn.decrement {
+  background-color: #f44336;
+}
+
+.done-button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.food-group-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.food-group-image {
+  margin-right: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
